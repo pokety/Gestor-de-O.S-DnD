@@ -1,6 +1,6 @@
-loader();
 import $ from 'https://cdnjs.cloudflare.com/ajax/libs/cash/8.1.2/cash.min.js';
 import axios from 'https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.4/axios.js';
+loader();
 
 const [o_s, local, data, data_fim, hora, salvar] =
   document.querySelectorAll('input');
