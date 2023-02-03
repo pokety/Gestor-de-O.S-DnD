@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: #393939;
+      }
+      #header {
+        padding: 10px;
+      }
+      #delete {
+        border: 0px;
+        width: 40px;
+        height: 40px;
+      }
+
+      #body {
+        display: flex;
+        justify-content: space-between;
+        background: #393939;
+      }
+      .dropaveis {
+        color: azure;
+        border-radius: 0.5em;
+        border: 3px solid #525252;
+        background: url('https://cdn.pixabay.com/photo/2016/10/29/10/16/abstract-1780386_1280.png');
+        background-size: cover;
+        width: 30%;
+        height: 80vh;
+        padding: 10px;
+      }
+      .delete {
+        color: azure;
+        border-radius: 0.5em;
+        border: 3px solid #525252;
+        background: url('https://cdn.pixabay.com/photo/2014/03/22/17/03/the-background-292729_1280.png');
+        background-size: cover;
+        width: 98%;
+        height: 5vh;
+        padding: 10px;
+        margin-top: 5px;
+      }
+
+      .box {
+        color: black;
+        text-align: center;
+        border: 2px solid #666;
+        background-color: #ddd;
+        border-radius: 0.5em;
+        padding: 10px 0px;
+        cursor: move;
+        word-wrap: break-word;
+        margin-bottom: 8px;
+      }
+      .box:hover {
+        border: 2px solid red;
+        box-shadow: 0px 2px 5px red;
+      }
+    </style>
+  </head>
+  <body onload="loader()">
+    <div id="header">
+      <input type="text" placeholder="O.S" />
+      <input type="text" placeholder="Local" />
+      <input type="date" placeholder="Data inicio:19/12/1989" />
+      <input type="date" placeholder="Data fim:19/12/1989" />
+      <input type="time" />
+      <input type="button" value="Salvar" />
+      <button id="update">update</button>
+    </div>
+    <div id="body">
+      <div class="dropaveis" id="montar">
+        <div class="box1">MONTAR</div>
+      </div>
+      <div class="dropaveis" id="acontecendo">
+        <div class="box1">ACONTECENDO</div>
+      </div>
+      <div class="dropaveis" id="desmontar">
+        <div class="box1">DESMONTAR</div>
+      </div>
+    </div>
+    <div class="delete"></div>
+  </body>
+</html>
+""
